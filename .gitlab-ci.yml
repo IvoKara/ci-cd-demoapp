@@ -1,6 +1,6 @@
 tests:
-  image: python:3.9-alpine
+  image: python:3.9-slim-buster
   before_script:
-    - apk update && apk add make gcc
+    - apt-get update && apt-get install make gcc
   script:
     - make test
