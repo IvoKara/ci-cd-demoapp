@@ -4,3 +4,7 @@ tests:
     - apt-get update && apt-get install make gcc -y
   script:
     - make test
+
+  build:
+    script:
+      - docker build -t justivo/demo-app:ci-cd-app-1.0 .
