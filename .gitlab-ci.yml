@@ -5,9 +5,9 @@ tests:
   script:
     - make test
 
-  build:
-    variables:
-      IMAGE_NAME: justivo/demo-app
-      IMAGE_TAG: ci-cd-app-1.0
-    script:
-      - docker build -t $IMAGE_NAME:$IMAGE_TAG .
+build:
+  variables:
+    IMAGE_NAME: justivo/demo-app
+    IMAGE_TAG: ci-cd-app-1.0
+  script:
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG .
